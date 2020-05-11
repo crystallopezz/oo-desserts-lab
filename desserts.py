@@ -4,6 +4,8 @@
 class Cupcake:
     """A cupcake."""
 
+    cache = {}
+
     def __repr__(self):
         """Human-readable printout for debugging."""
 
