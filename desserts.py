@@ -17,6 +17,16 @@ class Cupcake:
     def add_stock(self, amount):
       self.qty += amount
 
+    def sell(self, amount):
+      if self.qty == 0:
+        return print('Sorry, these cupcakes are sold out')
+
+      if amount > self.qty:
+        self.qty = 0
+        return 
+
+      self.qty -= amount
+
     def __repr__(self):
         """Human-readable printout for debugging."""
 
