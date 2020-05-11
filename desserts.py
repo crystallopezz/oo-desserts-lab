@@ -14,6 +14,9 @@ class Cupcake:
 
       self.cache[self.name] = self
 
+    def add_stock(self, amount):
+      self.qty += amount
+
     def __repr__(self):
         """Human-readable printout for debugging."""
 
