@@ -41,6 +41,19 @@ class Cupcake:
 
       return scaled_recipe
 
+
+    @classmethod
+    def get(cls, name):
+      dictionary = cls.cache
+      apology = "Sorry, that cupcake doesn't exist"
+
+      if dictionary.get(name, False) == False:
+        return print(apology)
+
+      return dictionary[name]
+
+
+
     def __repr__(self):
         """Human-readable printout for debugging."""
 
