@@ -12,6 +12,8 @@ class Cupcake:
       self.price = price
       self.qty = 0
 
+      self.cache[self.name] = self
+
     def __repr__(self):
         """Human-readable printout for debugging."""
 
