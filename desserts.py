@@ -56,6 +56,8 @@ class Cupcake:
       #create new ingredient list
       scaled_recipe = [(ing_one[0], new_ing_one_amount), (ing_two[0], new_ing_two_amount)]
 
+
+      # refactor would iterate through list of ingredients
       return scaled_recipe
 
 
