@@ -27,6 +27,11 @@ class Cupcake:
 
       self.qty -= amount
 
+    @staticmathod
+    def scale_recipe(ingredients, amount):
+      list_of_ingredients = list(ingredients)
+      print(list_of_ingredients)
+
     def __repr__(self):
         """Human-readable printout for debugging."""
 
